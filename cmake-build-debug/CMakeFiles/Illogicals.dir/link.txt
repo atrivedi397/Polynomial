@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Illogicals.dir/main.cpp.o  -o Illogicals 

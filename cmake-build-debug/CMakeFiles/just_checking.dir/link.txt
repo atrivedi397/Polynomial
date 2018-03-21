@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/just_checking.dir/just_checking.cpp.o  -o just_checking 
