@@ -4,11 +4,6 @@
 /*****Implementing priority queue using Single linked list********/
 #pragma once
 
-
-#ifndef ILLOGICALS_QUEUE_H
-#define ILLOGICALS_QUEUE_H
-
-
 struct node
 {
     int coefficient;
@@ -44,13 +39,18 @@ void objects::create_node(int coeff, int priority)
         front = temp;
         rear = temp;
     }
-        //insertion if queue's rear's priority is more than given
+        //insertion if queue's front's priority is less than given then creating a new front
+    else if(priority < front->degree)
+    {
+        temp->next = front;
+        front = temp;
+    }
+        //insertion if queue's rear's priority is less than or equal given then creating a new rear and FCFS rule
     else if(priority >= rear->degree)
     {
         rear->next = temp;
-        rear = temp;
+        rear = rear->next;
     }
-
         //inserting according to the priority
     else
     {
@@ -79,11 +79,10 @@ node *objects::delete_node()
 node *objects::traversal(int priority)
 {
     node* temp = get_front_rear(1);
-    while(priority >= temp->degree)
-    {
+    while(temp->next->degree <= priority)
         temp = temp->next;
-        return temp->next;
-    }
+
+    return temp;
 }
 
 void objects::display()
@@ -97,5 +96,3 @@ void objects::display()
         ptr =  ptr->next;
     }
 }
-
-#endif //ILLOGICALS_QUEUE_H
