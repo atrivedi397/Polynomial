@@ -12,13 +12,11 @@ void operations::add_polynomial(objects* ob_1, objects* ob_2)
     objects* ob_3;
     node* front1;
     node* front2;
-    node* front3;
     node* rear1;
     node* rear2;
     ob_3 = new objects;
     front1 = ob_1->get_front_rear(1);
     front2 = ob_2->get_front_rear(1);
-    front3 = ob_3->get_front_rear(1);
     rear2 = ob_2->get_front_rear(2);
     rear1 = ob_1->get_front_rear(2);
 
@@ -29,41 +27,34 @@ void operations::add_polynomial(objects* ob_1, objects* ob_2)
             ob_3->create_node((front1->coefficient + front2->coefficient) , front1->degree);
             front1 = front1->next;
             front2 = front2->next;
-            front3 = ob_3->get_front_rear(1);
         }
         else if(front1->degree > front2->degree)
         {
             ob_3->create_node(front2->coefficient , front2->degree);
-            front1 = front1->next;
             front2 = front2->next;
-            front3 = ob_3->get_front_rear(1);
         }
         else
         {
             ob_3->create_node(front1->coefficient , front1->degree);
             front1 = front1->next;
-            front2 = front2->next;
-            front3 = ob_3->get_front_rear(1);
         }
     }
 
-    if(rear1->degree > rear2->degree)
+    if(rear1->degree >= rear2->degree)
     {
         while(front1 != nullptr)
         {
             ob_3->create_node(front1->coefficient , front1->degree);
             front1 = front1->next;
-            front3 = ob_3->get_front_rear(1);
         }
     }
 
-    if(rear1->degree < rear2->degree)
+    if(rear1->degree <= rear2->degree)
     {
         while(front2 != nullptr)
         {
             ob_3->create_node(front2->coefficient , front2->degree);
             front2 = front2->next;
-            front3 = ob_3->get_front_rear(1);
         }
     }
 
@@ -74,7 +65,7 @@ int main()
 {
     objects* ob1;
     ob1 = new objects;
-    ob1->create_node(45 , 3);
+    ob1->create_node(77 , 7);
     ob1->create_node(65 , 1);
     ob1->create_node(36 , 2);
     ob1->create_node(98 , 4);
@@ -83,6 +74,7 @@ int main()
 
     objects* ob2;
     ob2 = new objects;
+    ob2->create_node(15 , 4);
     ob2->create_node(10 , 2);
     ob2->create_node(12 , 3);
     ob2->create_node(-15 , 1);
