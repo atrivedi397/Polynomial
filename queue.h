@@ -89,10 +89,74 @@ void objects::display()
 {
     node* ptr = get_front_rear(1);
 
-    std::cout<<"\n\nYour given queue is as follows (priority is in brackets):\n\n";
+    std::cout<<"\n\nYour equation is as follows:\n\n";
     while(ptr != nullptr)
     {
-        std::cout<<ptr->coefficient<<"("<<ptr->degree<<")->";
+        std::cout<<ptr->coefficient<<"x^"<<ptr->degree<<"+ ";
         ptr =  ptr->next;
     }
+    std::cout<<"= 0\n\n";
+}
+
+//subclass created for adding add/subtract method
+class operations : public objects
+{
+public:
+    void add_polynomial(objects* ob_1, objects* ob_2);
+};
+
+void operations::add_polynomial(objects* ob_1, objects* ob_2)
+{
+    objects* ob_3; //in which resultant is stored
+    node* front1;  //for traversal along first equation
+    node* front2;  //for traversal along second equation
+    node* rear1;   //last of first equation
+    node* rear2;   //last of second equation
+    ob_3 = new objects;
+    front1 = ob_1->get_front_rear(1);
+    front2 = ob_2->get_front_rear(1);
+    rear2 = ob_2->get_front_rear(2);
+    rear1 = ob_1->get_front_rear(2);
+
+    //definition for adding these polynomials
+    while(front1 != nullptr && front2 != nullptr)
+    {
+        if(front1->degree == front2->degree)
+        {
+            ob_3->create_node((front1->coefficient + front2->coefficient) , front1->degree);
+            front1 = front1->next;
+            front2 = front2->next;
+        }
+        else if(front1->degree > front2->degree)
+        {
+            ob_3->create_node(front2->coefficient , front2->degree);
+            front2 = front2->next;
+        }
+        else
+        {
+            ob_3->create_node(front1->coefficient , front1->degree);
+            front1 = front1->next;
+        }
+    }
+
+    if(rear1->degree >= rear2->degree)
+    {
+        while(front1 != nullptr)
+        {
+            ob_3->create_node(front1->coefficient , front1->degree);
+            front1 = front1->next;
+        }
+    }
+
+    if(rear1->degree <= rear2->degree)
+    {
+        while(front2 != nullptr)
+        {
+            ob_3->create_node(front2->coefficient , front2->degree);
+            front2 = front2->next;
+        }
+    }
+
+    //displaying the resultant
+    ob_3->display();
 }
