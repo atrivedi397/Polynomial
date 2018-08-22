@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/POLYNOMIAL.dir/Polynomial_Using_P_Queue/main.cpp.o  -o POLYNOMIAL 

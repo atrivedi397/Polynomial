@@ -1,3 +1,4 @@
 /home/atrivedi/Git Projects/Illogicals/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/atrivedi/Git Projects/Illogicals/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/atrivedi/Git Projects/Illogicals/cmake-build-debug/CMakeFiles/Illogicals.dir
+/home/atrivedi/Git Projects/Illogicals/cmake-build-debug/CMakeFiles/MERGE_SORT.dir
+/home/atrivedi/Git Projects/Illogicals/cmake-build-debug/CMakeFiles/POLYNOMIAL.dir

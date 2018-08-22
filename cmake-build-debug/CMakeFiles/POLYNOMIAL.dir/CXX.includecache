@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/atrivedi/Git Projects/Illogicals/Polynomial_Using_P_Queue/main.cpp
+iostream
+-
+queue.h
+/home/atrivedi/Git Projects/Illogicals/Polynomial_Using_P_Queue/queue.h
+
+/home/atrivedi/Git Projects/Illogicals/Polynomial_Using_P_Queue/queue.h
+

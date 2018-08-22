@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/SOURCE_FILES.dir/Polynomial_Using_P_Queue/main.cpp.o  -o SOURCE_FILES 

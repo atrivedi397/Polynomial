@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/atrivedi/Git Projects/Illogicals/Merge_Sort/merge_sort.cpp
+iostream
+-
+merge_sort.h
+/home/atrivedi/Git Projects/Illogicals/Merge_Sort/merge_sort.h
+
+/home/atrivedi/Git Projects/Illogicals/Merge_Sort/merge_sort.h
+
