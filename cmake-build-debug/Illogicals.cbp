@@ -27,6 +27,48 @@
 					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="POLYNOMIAL">
+				<Option output="/home/atrivedi/Git Projects/Illogicals/cmake-build-debug/POLYNOMIAL" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/atrivedi/Git Projects/Illogicals/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 POLYNOMIAL"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="POLYNOMIAL/fast">
+				<Option output="/home/atrivedi/Git Projects/Illogicals/cmake-build-debug/POLYNOMIAL" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/atrivedi/Git Projects/Illogicals/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 POLYNOMIAL/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/home/atrivedi/Git Projects/Illogicals/cmake-build-debug"/>
 				<Option type="4"/>
@@ -79,8 +121,8 @@
 					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="POLYNOMIAL">
-				<Option output="/home/atrivedi/Git Projects/Illogicals/cmake-build-debug/POLYNOMIAL" prefix_auto="0" extension_auto="0"/>
+			<Target title="HEAP_SORT">
+				<Option output="/home/atrivedi/Git Projects/Illogicals/cmake-build-debug/HEAP_SORT" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/atrivedi/Git Projects/Illogicals/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -94,14 +136,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 POLYNOMIAL"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 HEAP_SORT"/>
 					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="POLYNOMIAL/fast">
-				<Option output="/home/atrivedi/Git Projects/Illogicals/cmake-build-debug/POLYNOMIAL" prefix_auto="0" extension_auto="0"/>
+			<Target title="HEAP_SORT/fast">
+				<Option output="/home/atrivedi/Git Projects/Illogicals/cmake-build-debug/HEAP_SORT" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/atrivedi/Git Projects/Illogicals/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -115,13 +157,19 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 POLYNOMIAL/fast"/>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 HEAP_SORT/fast"/>
 					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/atrivedi/Git\ Projects/Illogicals/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/atrivedi/Git Projects/Illogicals/Heap_Sort/heap_sort.cpp">
+			<Option target="HEAP_SORT"/>
+		</Unit>
+		<Unit filename="/home/atrivedi/Git Projects/Illogicals/Heap_Sort/heap_sort.h">
+			<Option target="HEAP_SORT"/>
+		</Unit>
 		<Unit filename="/home/atrivedi/Git Projects/Illogicals/Merge_Sort/merge_sort.cpp">
 			<Option target="MERGE_SORT"/>
 		</Unit>

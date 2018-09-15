@@ -9,3 +9,6 @@ add_executable(POLYNOMIAL ${POLYNOMIAL_FILES} )
 
 set(MERGE_SORT_FILES Merge_Sort/merge_sort.cpp Merge_Sort/merge_sort.h)
 add_executable(MERGE_SORT ${MERGE_SORT_FILES})
+
+set(HEAP_SORT_FILES Heap_Sort/heap_sort.cpp Heap_Sort/heap_sort.h)
+add_executable(HEAP_SORT ${HEAP_SORT_FILES})
